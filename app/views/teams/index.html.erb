@@ -1,0 +1,6 @@
+<h2>All Teams</h2>
+<h4><%@teams.each do |t|%></h4>
+<div class="well"><h5><%=t.name%></h5>
+   <%= link_to "Read More", team_path(t), :class=> 'btn btn-default'%>
+   </div> 
+   <%end%>

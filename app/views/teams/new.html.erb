@@ -1,0 +1,10 @@
+<h1>Add Team</h1>
+<%= form_for :team, url: teams_path do |f| %>
+<p>
+<%= f.label :name %><br>
+<%= f.text_field(:name, {:class => 'form-control'}) %><br>
+</p>
+<p>
+<%= f.submit({:value=>"Create A Team", :class=>'btn btn-primary'}) %>
+</p>
+<% end %>
